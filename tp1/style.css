@@ -1,26 +1,58 @@
+html{
+	font-size: 10px;
+}
+body{
+	font-size: 1.6rem;
+	background-image:url("image/bg.jpg");
+	color:white;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	
 
-#bleu{
-	background-color:blue;
 }
-#rouge{
-	background-color:red;
+h1{
+	font-size: 8vw;
 }
+
 .form{
-	position:center;
+	text-align:center;
 }
 .image{
 	width:300px;
 	height:150px;
-	background-image:url("image/logo-iut.jpg");
+	background-image:url("image/logo-iut.png");
 	background-repeat:no-repeat;
 	margin-left: auto;
 	margin-right: auto;
 	background-size:300px auto;
 }
-
-@media screen and (min-width: 200px) and (max-width: 640px) {
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+@media screen and (min-width: 300px) and (max-width: 640px) {
   .bloc {
     display:block;
     clear:both;
   }
+  th, td {
+    display:block;    
+}
+}
+@media screen and (min-width: 100px) and (max-width: 300px) {
+  .bloc {
+    display:block;
+    clear:both;
+  }
+.image{
+	width:100px;
+}
+th, td {
+    display:block;    
+}
 }
