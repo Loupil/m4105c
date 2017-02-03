@@ -1,0 +1,15 @@
+.bjr{
+	height:200px;
+}
+.img{
+	text-align: center;
+	
+}
+
+.img img{
+	margin-right:1%
+}
+
+.img div{
+	display:inline-block;
+}
