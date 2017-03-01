@@ -1,0 +1,155 @@
+{
+  
+  -webkit-transition:-webkit-transform .9s; // Chrome Safari
+  -moz-transition:-moz-transform .9s;       // Mozilla
+  -o-transition:-o-transform .9s;           // Opéra
+  -ms-transition:-ms-transform .9s;         // IE
+  transition:transform .9s;
+
+}
+/**:hover{
+  -webkit-transform:rotate(540deg);
+  -moz-transform:rotate(540deg);
+  -o-transform:rotate(540deg);
+  -ms-transform:rotate(540deg);
+  transform:rotate(540deg);
+}*/
+body{
+  background-color: #333333;
+  cursor: url("image/cursor.png"), pointer;
+}
+.menu_droite{
+  float: right;
+}
+#barre{
+  border-radius: 10px;
+  background-image: linear-gradient(180deg, blue, red);;
+}
+#pdkomquentin{
+  border-radius: 10px;
+  background-image: linear-gradient(180deg, blue, red);;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+::selection {
+ background:red;
+    color:white;
+}
+::-moz-selection {
+    background:red;
+    color:white;
+}
+MARQUEE{
+  background-image: linear-gradient(180deg, white, blue);;
+  border-radius: 20px;
+}
+li {
+    float: left;
+}
+h1{
+text-decoration: blink; /* La classe clignotant sera clignotante ! (ne fonctionne pas sous Internet Explorer) */
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation:hover:not(.active) {
+    background-color: blue;
+}
+.navigation:hover:not(.active) {
+    background-color: #FFFFFF;
+    color: black;
+}
+.navigation:hover:not(.active) {
+    background-color: red;
+}
+p, h2, h1, ul:first-child{
+  background: -webkit-gradient(linear, left top, left bottom, from(blue), to(red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+#omgputinsodarksasuke.put1{
+  -webkit-filter: saturate(50%);
+-moz-filter: saturate(50%);
+-o-filter: saturate(50%);
+-ms-filter: saturate(50%);
+
+filter: saturate(50%);
+}
+
+.bjr{
+	height:200px;
+}
+.img{
+	text-align: center;
+
+}
+
+.img img{
+	margin-right:1%
+}
+
+.img div{
+	display:inline-block;
+}
+
+.form{
+  width: 45%;
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.map{
+  width: 50%;
+  display: inline-block;
+  border-right: groove 1px red;
+  box-shadow: 1px 0px 0px blue;
+
+}
+.map iframe{
+margin-left : 5%;
+}
+.map h2{
+margin-left : 5%;
+}
+.form ul li:last-child{
+float: right;
+}
+.form ul li{
+  width: 45%
+
+}
+.form ul{
+  margin-bottom: auto;
+}
+.form ul button{
+  float: right;
+}
+ul input{
+  width: 100%;
+  margin-bottom: 4%;
+  height: 20px;
+}
+.wow{
+  height: 100px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .bloc {
+    display:block;
+    clear:both;
+  }
+}
