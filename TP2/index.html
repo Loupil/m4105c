@@ -9,32 +9,11 @@
   
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Image qui suit la souris</title>
-    <script type="text/javascript">
-        //<!--
-				var Lscreen=screen.width;
-				if (Lscreen>670){
-                document.onmousemove = suitsouris;
-                function suitsouris(evenement)
-                {
-                        if(navigator.appName=="Microsoft Internet Explorer")
-                        {
-                                var x = event.x+document.body.scrollLeft;
-                                var y = event.y+document.body.scrollTop;
-                        }
-                        else
-                        {
-                                var x =  evenement.pageX;
-                                var y =  evenement.pageY;
-                        }
-                        document.getElementById("image_suit_souris").style.left = (x-100)+'px';
-                        document.getElementById("image_suit_souris").style.top  = (y+50)+'px';
-                }
-				}
-        //-->
-        </script>
-</head>
+  
+        
 <body>
         <img src="image/suicurs.png" alt="Image qui suit la souris" id="image_suit_souris" style="position:absolute;display:block;z-index:5;" />
+
   <header>
   <img src="logo1.png" width=4%>
     <div class="menu_droite">
@@ -123,5 +102,34 @@ Vladimir Vladimirovitch Poutine (en russe : Влади́мир Влади́ми�
               </ul>
   </form>
 </div>
+  <script type="text/javascript">
+//<!--
+				var Lscreen=screen.width;
+				if (Lscreen>670){
+				//$('#image_suit_souris').show();
+                document.onmousemove = suitsouris;
+                function suitsouris(evenement)
+                {
+                        if(navigator.appName=="Microsoft Internet Explorer")
+                        {
+                                var x = event.x+document.body.scrollLeft;
+                                var y = event.y+document.body.scrollTop;
+                        }
+                        else
+                        {
+                                var x =  evenement.pageX;
+                                var y =  evenement.pageY;
+                        }
+                        document.getElementById("image_suit_souris").style.left = (x-100)+'px';
+                        document.getElementById("image_suit_souris").style.top  = (y+50)+'px';
+                }
+				}
+				else 
+				{
+					$('#image_suit_souris').css("display", "none");
+				}
+		//-->
+        </script>
+</head>
 </body>
 </html>
