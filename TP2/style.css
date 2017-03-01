@@ -157,6 +157,9 @@ and (max-device-width : 667px){
   box-shadow: 0px 0px 0px blue;
     }
 	.form{
-		width:98%;
+		width:95%;
 	}
+	.img div{
+	display:block;
+}
 }
