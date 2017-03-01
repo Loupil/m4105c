@@ -147,7 +147,9 @@ ul input{
   height: 100px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen 
+and (min-device-width : 0px) 
+and (max-device-width : 667px){
     /* For mobile phones: */
     .map {
         width: 98%;
