@@ -4,11 +4,15 @@
   <meta charset="utf-8">
   <title> IN PUTIN WE TRUST </title>
   <link rel="stylesheet" href="style.css">
+  <script src="jquery.js"></script>
   <script src="script.js"></script>
+  
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Image qui suit la souris</title>
     <script type="text/javascript">
         //<!--
+				var Lscreen=screen.width;
+				if (Lscreen>670){
                 document.onmousemove = suitsouris;
                 function suitsouris(evenement)
                 {
@@ -25,6 +29,7 @@
                         document.getElementById("image_suit_souris").style.left = (x-100)+'px';
                         document.getElementById("image_suit_souris").style.top  = (y+50)+'px';
                 }
+				}
         //-->
         </script>
 </head>
